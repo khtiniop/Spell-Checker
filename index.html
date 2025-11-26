@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Spell Checker</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Spell Checker</h1>
+        <p>Enter Word:</p>
+        <div class="input-row">
+            <input
+                type="text"
+                id="wordInput"
+                placeholder="Enter Word Please"
+                autocomplete="off"
+            />
+            <button id="checkBtn" disabled>check</button>
+        </div>
+        <div id="status">Suggestions:</div>
+        <ol id="suggestions"></ol>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
