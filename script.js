@@ -10,8 +10,8 @@ function isVowel(c) {
 // subsitution cost stuff ---- ben 
 function subCost(a, b) {
     if (a === b) return 0;
-    const av = isVowel(a);
-    const bv = isVowel(b);
+    const av= isVowel(a);
+    const bv= isVowel(b);
 
     //vowel-vowel OR consonant-consonant
     if ((av && bv) || (!av && !bv)) return 1;
@@ -68,7 +68,7 @@ function getSuggestions(word) {
     const scored = dictionary.map(dictWord => ({
         word: dictWord, score: alignmentScore(word, dictWord.toLowerCase())
     }));
-    scored.sort((a, b) => a.score - b.score); //sort words by alignment score 
+    scored.sort((a, b) =>a.score -b.score); //sort words by alignment score 
     return scored.slice(0, 10);
 }
 //top ten suggestions end---
